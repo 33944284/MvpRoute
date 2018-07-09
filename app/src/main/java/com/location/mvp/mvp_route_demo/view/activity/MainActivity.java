@@ -16,7 +16,6 @@ import com.location.mvp.mvproutelibrary.error.ExceptionHandle;
 
 public class MainActivity extends BaseActivity {
 
-	private TestView testView;
 
 	@Override
 	public void onshowError(ExceptionHandle.ResponeThrowable baseThrowable) {
