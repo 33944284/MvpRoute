@@ -33,4 +33,14 @@ public class TwoFragment extends Fragment {
 		String string = arguments.getString("123");
 		textView.setText(string);
 	}
+
+	@Override
+	public void onHiddenChanged(boolean hidden) {
+		super.onHiddenChanged(hidden);
+		if(!hidden){
+			Bundle arguments = getArguments();
+			String string = arguments.getString("123");
+			textView.setText(string);
+		}
+	}
 }
